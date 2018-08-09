@@ -10,36 +10,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <!-- Font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Asap:400,700|Open+Sans:300,400,700">
+    <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Grid Layout -->
-    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" >
-    <link rel="stylesheet" href="styles.css">
+    <link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    <link rel="stylesheet" href="css/output-styles/styles.css">
 </head>
 
 <body>
     <main>
-        <div class="container">
-            <div class="row">
+
+        <body>
+            <div class="wrapper">
                 <h1>
-                    Intro
+                    Projects
                 </h1>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="column">
-                    <h2>
-                        Project 1
-                    </h2>
+                <div class="cards">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card [ is-collapsed ]">
+                                <div class="card__inner [ js-expander ]">
+                                    <span>Card</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="card__expander">
+                                    <i class="fa fa-close [ js-collapser ]"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class=" card [ is-collapsed ] ">
+                                <div class="card__inner [ js-expander ]">
+                                    <span>Card</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="card__expander">
+                                    <i class="fa fa-close [ js-collapser ]"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class=" card [ is-collapsed ] ">
+                                <div class="card__inner [ js-expander ]">
+                                    <span>Card</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="card__expander">
+                                    <i class="fa fa-close [ js-collapser ]"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+                            <div class=" card [ is-collapsed ] ">
+                                <div class="card__inner [ js-expander ]">
+                                    <span>Card</span>
+                                    <i class="fa fa-angle-down"></i>
+                                </div>
+                                <div class="card__expander">
+                                    <i class="fa fa-close [ js-collapser ]"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="column">
-                    <h2>
-                        Project 2
-                    </h2>
-                </div>
             </div>
-        </div>
+
+        </body>
     </main>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src=js/expander.js></script>
 </body>
 
 </html>
