@@ -35,11 +35,11 @@ h3 {
     text-transform: uppercase;
     text-align: center;
     transition: all 0.3s ease-out; }
+    .card__inner:after {
+      transition: opacity 0.3s ease-in-out; }
     .card__inner .fa {
       width: 100%;
       margin-top: .25em; }
-    .card__inner:after {
-      transition: opacity 0.3s ease-in-out; }
   .card__expander {
     transition: max-height 0.3s ease-out;
     transition: min-height 0.3s ease-out;
@@ -47,6 +47,7 @@ h3 {
     background-color: #4e5c88;
     border-radius: 5px;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
@@ -55,6 +56,7 @@ h3 {
     .card__expander .fa {
       font-size: 0.75em;
       position: absolute;
+      display: block;
       top: 10px;
       right: 10px;
       cursor: pointer; }
