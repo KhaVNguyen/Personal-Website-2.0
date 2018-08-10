@@ -38,6 +38,8 @@ h3 {
     .card__inner .fa {
       width: 100%;
       margin-top: .25em; }
+    .card__inner:after {
+      transition: opacity 0.3s ease-in-out; }
   .card__expander {
     transition: max-height 0.3s ease-out;
     transition: min-height 0.3s ease-out;
@@ -58,19 +60,9 @@ h3 {
       cursor: pointer; }
       .card__expander .fa:hover {
         opacity: 0.9; }
-    .card__expander:after {
-      bottom: 33%;
-      left: 27%;
-      border: solid transparent;
-      content: " ";
-      height: 0;
-      width: 0;
-      position: absolute;
-      pointer-events: none;
-      border-color: rgba(78, 92, 136, 0);
-      border-bottom-color: #4E5C88;
-      border-width: 30px;
-      margin-left: -30px; }
+  .card.is-collapsed .card__inner:after {
+    content: "";
+    opacity: 0; }
   .card.is-collapsed .card__expander {
     max-height: 0;
     min-height: 0;
@@ -82,6 +74,19 @@ h3 {
     color: #e0e3eb; }
     .card.is-expanded .card__inner .fa:before {
       content: "\f106"; }
+    .card.is-expanded .card__inner:after {
+      content: "";
+      opacity: 1;
+      display: block;
+      height: 0;
+      width: 0;
+      position: absolute;
+      bottom: -30px;
+      left: calc(50% - 15px);
+      color: white;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 15px solid #333a45; }
   .card.is-expanded .card__expander {
     max-height: 1000px;
     min-height: 200px;
