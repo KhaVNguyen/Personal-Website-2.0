@@ -58,6 +58,19 @@ h3 {
       cursor: pointer; }
       .card__expander .fa:hover {
         opacity: 0.9; }
+    .card__expander:after {
+      bottom: 33%;
+      left: 27%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(78, 92, 136, 0);
+      border-bottom-color: #4E5C88;
+      border-width: 30px;
+      margin-left: -30px; }
   .card.is-collapsed .card__expander {
     max-height: 0;
     min-height: 0;

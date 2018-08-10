@@ -80,6 +80,20 @@ h3 {
                 opacity: 0.9;
             }
         }
+        &:after {
+            bottom: 33%;
+            left: 27%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(78, 92, 136, 0);
+            border-bottom-color: #4E5C88;
+            border-width: 30px;
+            margin-left: -30px;
+        }
     }
     &.is-collapsed {
         .card__expander {
