@@ -1,5 +1,5 @@
 /*
-Error: Undefined variable: "$secondary".
+Error: Undefined variable: "$primary".
         on line 10 of css/input-styles/card-expander-styles.scss
 
 5:      // Expander
@@ -7,7 +7,7 @@ Error: Undefined variable: "$secondary".
 7:         transition: max-height 0.3s ease-out;
 8:         transition: min-height 0.3s ease-out;
 9:         transition: margin-top 0.3s ease-out;
-10:         background-color: $secondary;
+10:         background-color: $primary;
 11:         border-radius: 5px;
 12:         display: flex;
 13:         position: relative;
@@ -80,4 +80,4 @@ css/input-styles/card-expander-styles.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$secondary\".\A         on line 10 of css/input-styles/card-expander-styles.scss\A \A 5:      // Expander\A 6:     &__expander {\A 7:         transition: max-height 0.3s ease-out;\A 8:         transition: min-height 0.3s ease-out;\A 9:         transition: margin-top 0.3s ease-out;\A 10:         background-color: $secondary;\A 11:         border-radius: 5px;\A 12:         display: flex;\A 13:         position: relative;\A 14:         justify-content: center;\A 15:         align-items: center;"; }
+  content: "Error: Undefined variable: \"$primary\".\A         on line 10 of css/input-styles/card-expander-styles.scss\A \A 5:      // Expander\A 6:     &__expander {\A 7:         transition: max-height 0.3s ease-out;\A 8:         transition: min-height 0.3s ease-out;\A 9:         transition: margin-top 0.3s ease-out;\A 10:         background-color: $primary;\A 11:         border-radius: 5px;\A 12:         display: flex;\A 13:         position: relative;\A 14:         justify-content: center;\A 15:         align-items: center;"; }

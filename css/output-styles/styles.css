@@ -2,8 +2,8 @@
   margin: 10px;
   transition: all 0.3s ease-out; }
   .card:hover .card__inner {
-    background-color: #4e5c88;
     transform: scale(1.03);
+    background: linear-gradient(to top left, #324376, #5069b4);
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.4); }
   .card__inner {
     color: #e0e3eb;
@@ -13,7 +13,7 @@
     position: relative;
     cursor: pointer;
     height: 50vh;
-    background-color: #324376;
+    background: linear-gradient(to top left, #324376, #4962ab);
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
     font-size: 1.5em;
     text-transform: uppercase;
@@ -32,7 +32,7 @@
   transition: max-height 0.3s ease-out;
   transition: min-height 0.3s ease-out;
   transition: margin-top 0.3s ease-out;
-  background-color: #4e5c88;
+  background-color: #324376;
   border-radius: 5px;
   display: flex;
   position: relative;

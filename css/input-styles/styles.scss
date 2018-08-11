@@ -4,6 +4,9 @@ $slate: darken(#eceef1, 70%);
 $primary: hsl(225, 40%, 33%);
 $secondary: hsl(226, 27%, 42%);
 $complement: hsl(9, 40%, 33%);
+$primary-gradient: linear-gradient(to top left, $primary, lighten($primary, 15%));
+$primary-gradient-hover: linear-gradient(to top left, $primary, lighten($primary, 18%));
+$secondary-gradient: linear-gradient(to left top, $secondary, lighten($secondary, 15%));
 @import "card-styles";
 @import "card-expander-styles";
 
