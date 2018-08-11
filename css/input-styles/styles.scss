@@ -4,6 +4,10 @@ $slate: darken(#eceef1, 70%);
 $primary: hsl(225, 40%, 33%);
 $secondary: hsl(226, 27%, 42%);
 $complement: hsl(9, 40%, 33%);
+@import "card-styles";
+@import "card-expander-styles";
+
+
 * {
     box-sizing: border-box;
     /* all elements include border and padding in size */
@@ -25,141 +29,10 @@ h3 {
     font-family: "Asap", sans-serif;
 }
 
-// Card Container
-.cards {}
-
-//Cards
-.card {
-    margin: 10px;
-    transition: all 0.3s ease-out;
-    &:hover {
-        .card__inner {
-            background-color: $secondary;
-            transform: scale(1.03);
-            box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.4);
-        }
-    }
-    &__inner {
-        color: $light-gray;
-        width: 100%;
-        border-radius: 5px;
-        padding: 30px;
-        position: relative;
-        cursor: pointer;
-        height: 50vh;
-        background-color: $primary;
-        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
-        font-size: 1.5em;
-        text-transform: uppercase;
-        text-align: center;
-        transition: all 0.3s ease-out;
-        &:after {
-            transition: opacity 0.3s ease-in-out;
-        }
-        .fa {
-            width: 100%;
-            margin-top: .25em;
-        }
-    } // Expander
-    &__expander {
-        transition: max-height 0.3s ease-out;
-        transition: min-height 0.3s ease-out;
-        transition: margin-top 0.3s ease-out;
-        background-color: $secondary;
-        border-radius: 5px;
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.5em;
-        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
-        padding: 20px;
-        .fa {
-            font-size: 0.75em;
-            position: absolute;
-            display: block;
-            top: 10px;
-            right: 10px;
-            cursor: pointer;
-            &:hover {
-                opacity: 0.9;
-            }
-        }
-    }
-    &.is-collapsed {
-        .card__inner {
-            &:after {
-                content: "";
-                opacity: 0;
-            }
-        }
-        .card__expander {
-            max-height: 0;
-            min-height: 0;
-            overflow: hidden;
-            margin-top: 0;
-            opacity: 0;
-        }
-    }
-    &.is-expanded {
-        .card__inner {
-            background-color: $secondary;
-            color: $light-gray; //folder open icon
-            .fa:before {
-                content: "\f106";
-            }
-            &:after {
-                content: "";
-                opacity: 1;
-                display: block;
-                height: 0;
-                width: 0;
-                position: absolute;
-                bottom: -30px;
-                left: calc(50% - 15px);
-                color: white;
-                border-left: 15px solid transparent;
-                border-right: 15px solid transparent;
-                border-bottom: 15px solid #333a45;
-            }
-        }
-        .card__expander {
-            max-height: 1000px;
-            min-height: 200px;
-            overflow: visible;
-            margin-top: 30px;
-            opacity: 1;
-            color: $light-gray;
-        }
-        &:hover {
-            .card__inner {
-                transform: scale(1);
-            }
-        }
-    }
-    &.is-inactive {
-        .card__inner {
-            pointer-events: none;
-            opacity: 0.5;
-        }
-        &:hover {
-            .card__inner {
-                background-color: $gray;
-                transform: scale(1);
-            }
-        }
-    }
+.section {
 }
 
-// 2 Card per row layout
-@media screen and (min-width: 768px) {
-    .col-sm-6:nth-of-type(1) .card__expander {
-        width: calc(200% + 35px);
-    }
-    .col-sm-6:nth-of-type(2) .card__expander {
-        margin-left: calc(-100% - 35px);
-    }
-}
+
 
 .debug-mode {
     border: 2px solid red;

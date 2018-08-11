@@ -26,6 +26,5 @@ $cell.find('.js-collapser').click(function() {
 $(document).click(function(event) { 
     if(!$(event.target).closest('.card').length) {
        $currentlyExpanded.removeClass('is-expanded').addClass('is-collapsed');
-        console.log("Clicked outside of card");
     }        
 });

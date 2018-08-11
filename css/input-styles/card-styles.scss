@@ -1,0 +1,41 @@
+.card {
+    margin: 10px;
+    transition: all 0.3s ease-out;
+    &:hover {
+        .card__inner {
+            background-color: $secondary;
+            transform: scale(1.03);
+            box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.4);
+        }
+    }
+    &__inner {
+        color: $light-gray;
+        width: 100%;
+        border-radius: 5px;
+        padding: 30px;
+        position: relative;
+        cursor: pointer;
+        height: 50vh;
+        background-color: $primary;
+        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+        font-size: 1.5em;
+        text-transform: uppercase;
+        text-align: center;
+        transition: all 0.3s ease-out;
+        &:after {
+            transition: opacity 0.3s ease-in-out;
+        }
+        .fa {
+            width: 100%;
+            margin-top: .25em;
+        }
+    }
+    &.is-collapsed {
+        .card__inner {
+            &:after {
+                content: "";
+                opacity: 0;
+            }
+        }
+    }
+}
