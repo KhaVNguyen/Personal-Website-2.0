@@ -1,4 +1,5 @@
 // For styles relating to the expanding function of the cards
+@import "styles.scss";
 
 .card {
     
@@ -16,6 +17,7 @@
         font-size: 1.5em;
         box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
         padding: 20px;
+        border: 2px solid red;
         .fa {
             font-size: 0.75em;
             position: absolute;
@@ -39,7 +41,7 @@
     }
     &.is-expanded {
         .card__inner {
-            background-color: $secondary;
+            background: $primary-gradient-hover;
             color: $light-gray; //folder open icon
             .fa:before {
                 content: "\f106";

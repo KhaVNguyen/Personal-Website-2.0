@@ -3,5 +3,5 @@
 "mappings": "AAWA,CAAE;EACE,UAAU,EAAE,UAAU;EACtB,qDAAqD;;AAGzD,IAAK;EACD,WAAW,EAAE,uBAAuB;;AAIxC,QAAS;EACL,WAAW,EAAE,IAAI;EACjB,YAAY,EAAE,IAAI;;AAGtB;;EAEG;EACC,WAAW,EAAE,kBAAkB;EAC/B,WAAW,EAAE,8BAA8B;EAC3C,cAAc,EAAE,SAAS;;AAQ7B,WAAY;EACR,MAAM,EAAE,aAAa",
 "sources": ["../input-styles/styles.scss"],
 "names": [],
-"file": "styles.css"
+"file": "project-styles.css"
 }

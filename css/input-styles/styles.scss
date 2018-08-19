@@ -7,8 +7,6 @@ $complement: hsl(9, 40%, 33%);
 $primary-gradient: linear-gradient(to top left, $primary, lighten($primary, 15%));
 $primary-gradient-hover: linear-gradient(to top left, $primary, lighten($primary, 18%));
 $secondary-gradient: linear-gradient(to left top, $secondary, lighten($secondary, 15%));
-@import "card-styles";
-@import "card-expander-styles";
 
 
 * {
@@ -30,6 +28,8 @@ h1,
 h2,
 h3 {
     font-family: "Asap", sans-serif;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
 }
 
 .section {

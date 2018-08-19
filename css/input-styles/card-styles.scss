@@ -1,3 +1,4 @@
+@import "styles.scss";
 .card {
     margin: 10px;
     transition: all 0.3s ease-out;
@@ -12,16 +13,16 @@
         color: $light-gray;
         width: 100%;
         border-radius: 5px;
-        padding: 30px;
         position: relative;
         cursor: pointer;
-        height: 50vh;
+        height: 400px;
         background: $primary-gradient;
         box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
         font-size: 1.5em;
         text-transform: uppercase;
         text-align: center;
         transition: all 0.3s ease-out;
+        padding-bottom: 30px;
         &:after {
             transition: opacity 0.3s ease-in-out;
         }
@@ -38,4 +39,28 @@
             }
         }
     }
+}
+
+img {
+}
+
+span {
+    display: block;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px 5px 0px 0px;
+    height: 325px;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
 }
