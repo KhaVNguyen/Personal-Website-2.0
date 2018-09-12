@@ -1,21 +1,28 @@
-$light-gray: hsl(222, 20%, 90%);
-$gray: darken(#eceef1, 30%);
-$slate: darken(#eceef1, 70%);
+$black: #111111;
+$gray: #AAAAAA;
+$dark-gray: #3d3d3d;
+$light-gray: #7a7a7a;
+$navy: #001f3f;
+$silver: #DDDDDD;
 $primary: hsl(225, 40%, 33%);
 $secondary: hsl(226, 27%, 42%);
 $complement: hsl(9, 40%, 33%);
 $primary-gradient: linear-gradient(to top left, $primary, lighten($primary, 15%));
 $primary-gradient-hover: linear-gradient(to top left, $primary, lighten($primary, 18%));
 $secondary-gradient: linear-gradient(to left top, $secondary, lighten($secondary, 15%));
-
+$box-shadow: 0 0px 15px 0 $light-gray;
+$box-shadow-hover: 0 0px 30px 0 $light-gray;
+$box-shadow-subtle: 0 0px 5px 0 $light-gray;
+$box-shadow-subtle_hover: 0 0px 10px 0 $light-gray;
 
 * {
     box-sizing: border-box;
-    /* all elements include border and padding in size */
 }
 
 body {
     font-family: "Open Sans", sans-serif;
+    color: $black;
+    background-color: white;
 }
 
 // Wrapper for content on screen, adds margin
@@ -28,14 +35,29 @@ h1,
 h2,
 h3 {
     font-family: "Asap", sans-serif;
-    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
 }
 
-.section {
+h1 {
+    font-size: 2.5em;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
 }
 
+h2,
+h3 {
+    text-shadow: 1px 1px 5px $dark-gray;
+}
 
+.section {}
+
+.fullscreen-section {
+    height: 100vh;
+}
 
 .debug-mode {
     border: 2px solid red;

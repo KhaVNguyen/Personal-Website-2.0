@@ -1,9 +1,10 @@
 * {
-  box-sizing: border-box;
-  /* all elements include border and padding in size */ }
+  box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: white; }
 
 .wrapper {
   margin-left: 30px;
@@ -13,18 +14,155 @@ h1,
 h2,
 h3 {
   font-family: "Asap", sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+
+h1 {
+  font-size: 2.5em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; }
+
+h2,
+h3 {
+  text-shadow: 1px 1px 5px #3d3d3d; }
+
+.fullscreen-section {
+  height: 100vh; }
 
 .debug-mode {
   border: 2px solid red; }
 
+/* Contains all styles for the main intro div when you first launch the site */
+.name {
+  font-size: 4.3em;
+  text-align: center; }
+
+.introDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+/*Social Icons*/
+.social-icons {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 36vw;
+  padding: 5px 5px 5px 5px;
+  border-radius: 15px;
+  margin-top: 20px; }
+
+@media only screen and (max-width: 1000px) {
+  .social-icons {
+    width: 75vw; } }
+.circle {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 100000vmin;
+  box-shadow: 0 0px 5px 0 #7a7a7a;
+  transition: all 0.3s ease-out; }
+  .circle:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0 0px 10px 0 #7a7a7a; }
+
+@media only screen and (max-width: 1000px) {
+  .circle {
+    width: 15vmin;
+    height: 15vmin;
+    font-size: 6vmin; } }
+.nounderline {
+  text-decoration: none !important; }
+
+.fa-twitter {
+  color: #33ccff;
+  border: 2px solid #33ccff; }
+
+.fa-twitter:hover {
+  background-color: #33ccff; }
+
+.fa-github {
+  color: #24292E;
+  border: 2px solid #24292E;
+  font-size: 3.8vmin; }
+
+@media only screen and (max-width: 1000px) {
+  .fa-github {
+    font-size: 5.7vmin; } }
+.fa-github:hover {
+  background-color: #24292E; }
+
+.fa-codepen {
+  color: white;
+  border-color: white;
+  font-size: 3.5vmin; }
+
+@media only screen and (max-width: 1000px) {
+  .fa-codepen {
+    font-size: 5.25vmin; } }
+.fa-codepen:hover {
+  background-color: #24292E; }
+
+.fa-envelope {
+  color: #8b9cce;
+  border: 2px solid #8b9cce;
+  font-size: 3.5vmin; }
+
+@media only screen and (max-width: 1000px) {
+  .fa-envelope {
+    font-size: 5.25vmin; } }
+.fa-linkedin {
+  color: #0e78aa;
+  border: 2px solid #0e78aa; }
+
+.fa-linkedin:hover {
+  background-color: #0e78aa; }
+
+@media only screen and (max-width: 1000px) {
+  .fa-linkedin {
+    font-size: 5.25vmin; } }
+.fa-envelope:hover {
+  background-color: #8b9cce; }
+
+.fa-envelope:hover,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-codepen:hover,
+.fa-linkedin:hover {
+  color: white; }
+
+.screen-reader {
+  position: absolute;
+  left: -9999px;
+  top: -9999px; }
+
+/*.drop-shadow { background: none; box-shadow: 1px 1px 3px hsla(0, 0%, 0%, .4); }*/
+.shadow .tab {
+  background: none; }
+
+.shadow .circle {
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); }
+
 * {
-  box-sizing: border-box;
-  /* all elements include border and padding in size */ }
+  box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: white; }
 
 .wrapper {
   margin-left: 30px;
@@ -34,8 +172,23 @@ h1,
 h2,
 h3 {
   font-family: "Asap", sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+
+h1 {
+  font-size: 2.5em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; }
+
+h2,
+h3 {
+  text-shadow: 1px 1px 5px #3d3d3d; }
+
+.fullscreen-section {
+  height: 100vh; }
 
 .debug-mode {
   border: 2px solid red; }
@@ -51,9 +204,8 @@ h3 {
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
-  box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
-  padding: 20px;
-  border: 2px solid red; }
+  box-shadow: 0 1px 30px 0 #7a7a7a;
+  padding: 20px; }
   .card__expander .fa {
     font-size: 0.75em;
     position: absolute;
@@ -71,7 +223,7 @@ h3 {
   opacity: 0; }
 .card.is-expanded .card__inner {
   background: linear-gradient(to top left, #324376, #5069b4);
-  color: #e0e3eb; }
+  color: white; }
   .card.is-expanded .card__inner .fa:before {
     content: "\f106"; }
   .card.is-expanded .card__inner:after {
@@ -93,14 +245,14 @@ h3 {
   overflow: visible;
   margin-top: 30px;
   opacity: 1;
-  color: #e0e3eb; }
+  color: white; }
 .card.is-expanded:hover .card__inner {
   transform: scale(1); }
 .card.is-inactive .card__inner {
   pointer-events: none;
   opacity: 0.5; }
 .card.is-inactive:hover .card__inner {
-  background-color: #949fb0;
+  background-color: white;
   transform: scale(1); }
 
 @media screen and (min-width: 768px) {
@@ -110,11 +262,12 @@ h3 {
   .col-sm-6:nth-of-type(2) .card__expander {
     margin-left: calc(-100% - 35px); } }
 * {
-  box-sizing: border-box;
-  /* all elements include border and padding in size */ }
+  box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: white; }
 
 .wrapper {
   margin-left: 30px;
@@ -124,8 +277,23 @@ h1,
 h2,
 h3 {
   font-family: "Asap", sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+
+h1 {
+  font-size: 2.5em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; }
+
+h2,
+h3 {
+  text-shadow: 1px 1px 5px #3d3d3d; }
+
+.fullscreen-section {
+  height: 100vh; }
 
 .debug-mode {
   border: 2px solid red; }
@@ -136,16 +304,16 @@ h3 {
   .card:hover .card__inner {
     transform: scale(1.03);
     background: linear-gradient(to top left, #324376, #5069b4);
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1px 30px 0 #7a7a7a; }
   .card__inner {
-    color: #e0e3eb;
+    color: white;
     width: 100%;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
     height: 400px;
     background: linear-gradient(to top left, #324376, #4962ab);
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 15px 0 #7a7a7a;
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
@@ -156,6 +324,19 @@ h3 {
     .card__inner .fa {
       width: 100%;
       margin-top: .25em; }
+    .card__inner__image {
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px 5px 0px 0px;
+      height: 325px; }
+    .card__inner__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75px; }
   .card.is-collapsed .card__inner:after {
     content: "";
     opacity: 0; }
@@ -163,27 +344,13 @@ h3 {
 span {
   display: block; }
 
-.card-image {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px 5px 0px 0px;
-  height: 325px; }
-
-.card-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75px; }
-
 * {
-  box-sizing: border-box;
-  /* all elements include border and padding in size */ }
+  box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: white; }
 
 .wrapper {
   margin-left: 30px;
@@ -193,10 +360,31 @@ h1,
 h2,
 h3 {
   font-family: "Asap", sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+
+h1 {
+  font-size: 2.5em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; }
+
+h2,
+h3 {
+  text-shadow: 1px 1px 5px #3d3d3d; }
+
+.fullscreen-section {
+  height: 100vh; }
 
 .debug-mode {
   border: 2px solid red; }
+
+.project__summary {
+  font-size: 1.1em; }
+
+.project__description {
+  font-size: 1.0em; }
 
 /*# sourceMappingURL=master.css.map */

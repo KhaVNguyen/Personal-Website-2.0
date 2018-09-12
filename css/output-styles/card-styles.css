@@ -1,9 +1,10 @@
 * {
-  box-sizing: border-box;
-  /* all elements include border and padding in size */ }
+  box-sizing: border-box; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #111111;
+  background-color: white; }
 
 .wrapper {
   margin-left: 30px;
@@ -13,8 +14,23 @@ h1,
 h2,
 h3 {
   font-family: "Asap", sans-serif;
-  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
   text-transform: uppercase; }
+
+h1 {
+  font-size: 2.5em;
+  background-color: #565656;
+  color: transparent;
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.5);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text; }
+
+h2,
+h3 {
+  text-shadow: 1px 1px 5px #3d3d3d; }
+
+.fullscreen-section {
+  height: 100vh; }
 
 .debug-mode {
   border: 2px solid red; }
@@ -25,16 +41,16 @@ h3 {
   .card:hover .card__inner {
     transform: scale(1.03);
     background: linear-gradient(to top left, #324376, #5069b4);
-    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.4); }
+    box-shadow: 0 1px 30px 0 #7a7a7a; }
   .card__inner {
-    color: #e0e3eb;
+    color: white;
     width: 100%;
     border-radius: 5px;
     position: relative;
     cursor: pointer;
     height: 400px;
     background: linear-gradient(to top left, #324376, #4962ab);
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 15px 0 #7a7a7a;
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
@@ -45,26 +61,24 @@ h3 {
     .card__inner .fa {
       width: 100%;
       margin-top: .25em; }
+    .card__inner__image {
+      position: relative;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      border-radius: 5px 5px 0px 0px;
+      height: 325px; }
+    .card__inner__text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 75px; }
   .card.is-collapsed .card__inner:after {
     content: "";
     opacity: 0; }
 
 span {
   display: block; }
-
-.card-image {
-  position: relative;
-  overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  border-radius: 5px 5px 0px 0px;
-  height: 325px; }
-
-.card-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75px; }
 
 /*# sourceMappingURL=card-styles.css.map */

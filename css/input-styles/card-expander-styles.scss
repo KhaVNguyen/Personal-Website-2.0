@@ -15,9 +15,9 @@
         justify-content: center;
         align-items: center;
         font-size: 1.5em;
-        box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.5);
+        box-shadow: 0 1px 30px 0 $light-gray;
         padding: 20px;
-        border: 2px solid red;
+
         .fa {
             font-size: 0.75em;
             position: absolute;
@@ -42,7 +42,7 @@
     &.is-expanded {
         .card__inner {
             background: $primary-gradient-hover;
-            color: $light-gray; //folder open icon
+            color: white; //folder open icon
             .fa:before {
                 content: "\f106";
             }
@@ -67,7 +67,7 @@
             overflow: visible;
             margin-top: 30px;
             opacity: 1;
-            color: $light-gray;
+            color: white;
         }
         &:hover {
             .card__inner {
@@ -82,7 +82,7 @@
         }
         &:hover {
             .card__inner {
-                background-color: $gray;
+                background-color: white;
                 transform: scale(1);
             }
         }

@@ -1,0 +1,162 @@
+/* Contains all styles for the main intro div when you first launch the site */
+
+.name {
+    font-size: 4.3em;
+    text-align: center;
+}
+
+.introDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Social Icons*/
+
+.social-icons {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    width: 36vw;
+    padding: 5px 5px 5px 5px;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .social-icons {
+        width: 75vw;
+    }
+}
+
+.circle {
+    width: 5rem;
+    height: 5rem;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-radius: 100000vmin;
+    box-shadow: $box-shadow-subtle;
+    transition: all 0.3s ease-out;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        transform: scale(1.1);
+        box-shadow: $box-shadow-subtle-hover;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .circle {
+        width: 15vmin;
+        height: 15vmin;
+        font-size: 6vmin;
+    }
+}
+
+.nounderline {
+    text-decoration: none !important;
+}
+
+.fa-twitter {
+    color: #33ccff;
+    border: 2px solid #33ccff;
+}
+
+.fa-twitter:hover {
+    background-color: #33ccff;
+}
+
+.fa-github {
+    color: #24292E;
+    border: 2px solid #24292E;
+    font-size: 3.8vmin;
+}
+
+@media only screen and (max-width: 1000px) {
+    .fa-github {
+        font-size: 5.7vmin;
+    }
+}
+
+.fa-github:hover {
+    background-color: #24292E;
+}
+
+.fa-codepen {
+    color: white;
+    border-color: white;
+    font-size: 3.5vmin;
+}
+
+@media only screen and (max-width: 1000px) {
+    .fa-codepen {
+        font-size: 5.25vmin;
+    }
+}
+
+.fa-codepen:hover {
+    background-color: #24292E;
+}
+
+.fa-envelope {
+    color: #8b9cce;
+    border: 2px solid #8b9cce;
+    font-size: 3.5vmin;
+}
+
+@media only screen and (max-width: 1000px) {
+    .fa-envelope {
+        font-size: 5.25vmin;
+    }
+}
+
+.fa-linkedin {
+    color: hsl(199, 85%, 36%);
+    border: 2px solid hsl(199, 85%, 36%);
+}
+
+.fa-linkedin:hover {
+    background-color: hsl(199, 85%, 36%);
+}
+
+@media only screen and (max-width: 1000px) {
+    .fa-linkedin {
+        font-size: 5.25vmin;
+    }
+}
+
+.fa-envelope:hover {
+    background-color: #8b9cce;
+}
+
+.fa-envelope:hover,
+.fa-twitter:hover,
+.fa-github:hover,
+.fa-codepen:hover,
+.fa-linkedin:hover {
+    color: white;
+}
+
+.screen-reader {
+    position: absolute;
+    left: -9999px;
+    top: -9999px;
+}
+
+/*.drop-shadow { background: none; box-shadow: 1px 1px 3px hsla(0, 0%, 0%, .4); }*/
+
+.shadow .tab {
+    background: none;
+}
+
+.shadow .circle {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
